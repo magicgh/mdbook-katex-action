@@ -1,0 +1,14 @@
+name: 'mdbook-katex Action'
+description: 'GitHub Actions for mdbook-katex'
+author: 'magicgh'
+inputs:
+  version:
+    description: 'The mdbook-katex version to download (if necessary) and use. Example: 0.2.8'
+    required: false
+    default: 'latest'
+runs:
+  using: 'node12'
+  main: 'lib/index.js'
+branding:
+  icon: 'type'
+  color: 'white'
