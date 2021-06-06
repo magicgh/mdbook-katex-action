@@ -1,17 +1,16 @@
-# mdBook Katex Action
+# mdbook-katex Action
 
-[lzanini/mdbook-katex](https://github.com/lzanini/mdbook-katex) Setup Action, modified from [actions-mdbook](https://github.com/peaceiris/actions-mdbook).
-
-We can run mdbook-katex on a virtual machine of GitHub Actions by this action. Linux, macOS, and Windows are supported.
+[mdbook-katex](https://github.com/lzanini/mdbook-katex) Setup Action, modified from [actions-mdbook](https://github.com/peaceiris/actions-mdbook).
 
 ## Getting Started
 
 ```yaml
-name: mdbook-katex
+name: mdbook deploy
 
 on:
   push:
-  pull_request:
+    branches:
+      - main
 
 jobs:
   deploy:
@@ -19,11 +18,18 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - uses: actions/checkout@v2
+
+      - name: Setup mdBook
+        uses: peaceiris/actions-mdbook@v1
+        with:
+          mdbook-version: '0.4.7'
+
       - name: Setup mdbook-katex
         uses: magicgh/mdbook-katex-action@v1.0.0
         with:
           version: 'latest'
-
+      
       - run: mdbook build
 ```
 
@@ -33,7 +39,7 @@ jobs:
 
 ```yaml
 - name: Setup mdbook-katex
-  uses: magicgh/mdbook-katex-action@v1.0.0
+  uses: magicgh/mdbook-katex-action@v1
   with:
     version: '0.2.8'
 ```
