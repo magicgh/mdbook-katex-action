@@ -39,11 +39,12 @@ jobs:
 - name: Setup mdbook-katex
   uses: magicgh/mdbook-katex-action@v1
   with:
-    version: '0.2.8'
+    version: '0.2.9'
 ```
-
-Notice that there is only one version in [mdbook-katex/releases](https://github.com/lzanini/mdbook-katex/releases), i.e. v0.2.8, so this feature is useless.
 
 * Maybe this script can be run on Docker, but I haven't test yet. Check out [actions-mdbook](https://github.com/peaceiris/actions-mdbook#readme) for more detail.
 
 * Welcome to pull request.
+
+## To-do
+* Support to [mdbook-mermaid](https://github.com/badboy/mdbook-mermaid)
