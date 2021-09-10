@@ -45,4 +45,3 @@ jobs:
 * Maybe this script can be run on Docker, but I haven't test yet. Check out [actions-mdbook](https://github.com/peaceiris/actions-mdbook#readme) for more detail.
 
 * Welcome to pull request.
-
