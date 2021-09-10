@@ -24,7 +24,7 @@ jobs:
           mdbook-version: 'latest'
 
       - name: Setup mdbook-katex
-        uses: magicgh/mdbook-katex-action@v1.0.0
+        uses: magicgh/mdbook-katex-action@v1.1.0
         with:
           version: 'latest'
       
@@ -37,7 +37,7 @@ jobs:
 
 ```yaml
 - name: Setup mdbook-katex
-  uses: magicgh/mdbook-katex-action@v1
+  uses: magicgh/mdbook-katex-action@v1.1.0
   with:
     version: '0.2.9'
 ```
