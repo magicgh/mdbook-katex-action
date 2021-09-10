@@ -46,5 +46,3 @@ jobs:
 
 * Welcome to pull request.
 
-## To-do
-* Support to [mdbook-mermaid](https://github.com/badboy/mdbook-mermaid)
